@@ -1,0 +1,35 @@
+.project-bar {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--line, #30363d);
+  font-size: 13px;
+  color: var(--muted, #8b949e);
+}
+.project-bar .label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 11px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #6e7681;
+}
+.project-bar nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+}
+.project-bar a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+.project-bar a:hover { text-decoration: underline; }
+.project-bar a[aria-current="page"] {
+  color: var(--accent, #3fb950);
+  font-weight: 600;
+  pointer-events: none;
+}
+.project-bar .empty {
+  color: #6e7681;
+  font-style: italic;
+}

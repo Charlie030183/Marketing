@@ -1,0 +1,12 @@
+{
+  "updated": "2026-09-15",
+  "note": "Só entram projetos que Charlie_030183 autorizar para publicação. Logos públicos só após aprovação Charlie.",
+  "projects": [
+    {
+      "id": "ayla",
+      "name": "Ayla",
+      "path": "ayla/",
+      "status": "published"
+    }
+  ]
+}
