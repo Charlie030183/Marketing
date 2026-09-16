@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Carlos Castilho Jr. — Desenvolvedor de Sistemas</title>
-<style>
-:root{color-scheme:dark;--bg:#0d1117;--card:#161b22;--text:#e6edf3;--muted:#8b949e;--line:#30363d;--accent:#3fb950}
-*{box-sizing:border-box}
-body{margin:0;min-height:100vh;font-family:ui-sans-serif,system-ui,Segoe UI,Helvetica,Arial,sans-serif;background:radial-gradient(circle at top,#1c2333 0%,var(--bg) 45%);color:var(--text);display:flex;align-items:center;justify-content:center;padding:32px 16px}
-main{position:relative;width:min(760px,100%);background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 32px 40px}
-.hero{position:relative;min-height:150px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:24px}
-.lockup{flex:1;min-width:0}.role{display:block;font-size:14px;color:#9aa4af;letter-spacing:1.4px;margin-bottom:7px}.name{display:block;font-size:2rem;font-weight:700;color:#f3eee6;line-height:1.1}.alias{display:block;margin-top:8px;font-size:14px;color:var(--accent);letter-spacing:1.2px}
-.portrait{position:relative;width:160px;height:160px;flex:0 0 160px;overflow:hidden}.portrait img{width:100%;height:100%;object-fit:cover;display:block}.portrait:after{content:"";position:absolute;inset:-1px;background:radial-gradient(ellipse at center,transparent 42%,rgba(22,27,34,.10) 55%,rgba(22,27,34,.72) 76%,var(--card) 94%);pointer-events:none}
-p{margin:0 0 16px;color:var(--muted);line-height:1.6;font-size:1.05rem;text-align:justify}h2{margin:24px 0 10px;font-size:1.1rem}ul{margin:8px 0 16px;padding-left:20px;color:var(--text);line-height:1.7}a{color:#58a6ff;text-decoration:none}a:hover{text-decoration:underline}.projects{list-style:none;padding:0;margin:8px 0 16px}.projects li{margin:0 0 14px}.projects strong{color:#f3eee6}.projects p{margin:3px 0 0;font-size:1rem}footer{margin-top:8px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}.footer-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.legal{margin-top:10px;font-size:11px;color:#6e7681}
-@media(max-width:720px){body{padding:16px 10px}main{padding:20px 14px 28px}.hero{gap:12px;min-height:110px;margin-bottom:18px}.portrait{width:112px;height:112px;flex-basis:112px}.name{font-size:1.55rem}.role,.alias{font-size:12px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <title>Carlos Castilho Jr. — Desenvolvedor de Sistemas</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0d1117; --card:#161b22; --text:#e6edf3; --muted:#8b949e; --line:#30363d; --accent:#3fb950; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; font-family:ui-sans-serif,system-ui,Segoe UI,Helvetica,Arial,sans-serif; background:radial-gradient(circle at top,#1c2333 0%,var(--bg) 45%); color:var(--text); display:flex; align-items:center; justify-content:center; padding:32px 16px; }
+    main { position:relative; width:min(760px,100%); background:var(--card); border:1px solid var(--line); border-radius:16px; padding:28px 32px 40px; }
+    .hero { position:relative; min-height:130px; display:flex; align-items:center; justify-content:center; margin-bottom:24px; }
+    .lockup { display:flex; flex-direction:column; align-items:center; justify-content:center; padding-right:155px; }
+    .lockup strong { display:block; font-size:2rem; color:#f3eee6; }
+    .lockup .role { display:block; font-size:14px; color:#9aa4af; letter-spacing:1.4px; margin-top:5px; }
+    .lockup .alias { display:block; font-size:13px; color:#6e7681; letter-spacing:1.2px; margin-top:4px; }
+    .portrait { position:absolute; right:0; top:50%; transform:translateY(-50%); width:135px; height:135px; }
+    .portrait img { width:100%; height:100%; object-fit:cover; display:block; }
+    .portrait:after { content:""; position:absolute; inset:-2px; background:radial-gradient(ellipse at center,transparent 43%,rgba(22,27,34,.10) 55%,rgba(22,27,34,.70) 76%,var(--card) 94%); pointer-events:none; }
+    p { margin:0 0 16px; color:var(--muted); line-height:1.6; font-size:1.05rem; text-align:justify; }
+    h2 { margin:24px 0 10px; font-size:1.1rem; }
+    ul { margin:8px 0 16px; padding-left:20px; color:var(--text); line-height:1.7; }
+    a { color:#58a6ff; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    footer { margin-top:8px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+    .footer-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    .legal { margin-top:10px; font-size:11px; color:#6e7681; }
+    @media(max-width:720px){ body{padding:16px 10px} main{padding:20px 14px 28px} .hero{justify-content:space-between;gap:8px;min-height:110px} .lockup{padding-right:0;align-items:flex-start;max-width:calc(100% - 124px)} .lockup strong{font-size:1.55rem}.portrait{position:relative;right:auto;top:auto;transform:none;width:112px;height:112px;flex:0 0 112px} }
+  </style>
 </head>
 <body>
-<main>
-<div class="hero">
-<div class="lockup"><span class="role">Desenvolvedor de Sistemas</span><strong class="name">Carlos Castilho Jr.</strong><span class="alias">Charlie_030183</span></div>
-<div class="portrait"><img src="https://avatars.githubusercontent.com/u/92825591?v=4" alt="Carlos Castilho Jr."></div>
-</div>
-<p>Desenvolvimento de software, pesquisa e criação de projetos com novas tecnologias. Este espaço apresenta trabalhos em evolução e soluções construídas com foco em utilidade, simplicidade e acessibilidade.</p>
-<p>Os projetos combinam programação, automação e inteligência artificial, explorando diferentes tecnologias conforme as necessidades de cada ideia.</p>
-<h2>Projetos</h2>
-<ul class="projects">
-<li><strong>Smails</strong><p>Cliente de e-mail minimalista pensado para ser simples, rápido, bonito e acessível. <a href="../smails/pt.html">Conhecer o Smails →</a></p></li>
-<li><strong>Ayla</strong><p>Assistente inteligente voltada à automação, aprendizado e execução governada. <a href="../ayla/pt.html">Conhecer a Ayla →</a></p></li>
-</ul>
-<h2>Tecnologias</h2>
-<p>Python, Dart, Flutter, JavaScript, HTML, CSS, Kotlin, PowerShell, Git, GitHub Actions e APIs.</p>
-<footer><div class="footer-top"><span>Carlos Castilho Jr. · Charlie_030183</span><a href="https://github.com/Charlie030183">GitHub</a></div><div class="legal">Prévia temporária para validação visual.</div></footer>
-</main>
+  <main>
+    <div class="hero">
+      <div class="lockup">
+        <strong>Carlos Castilho Jr.</strong>
+        <span class="role">Desenvolvedor de Sistemas</span>
+        <span class="alias">Charlie_030183</span>
+      </div>
+      <div class="portrait"><img src="https://avatars.githubusercontent.com/u/92825591?v=4" alt="Carlos Castilho Jr."></div>
+    </div>
+
+    <p>Desenvolvimento de software, pesquisa e criação de projetos com novas tecnologias. Este espaço apresenta ideias em evolução e trabalhos transformados em soluções úteis, simples e acessíveis.</p>
+
+    <p>Os projetos combinam programação, automação e inteligência artificial, explorando diferentes tecnologias conforme as necessidades de cada ideia.</p>
+
+    <h2>Projetos e Desenvolvimento</h2>
+    <ul>
+      <li><strong>Smails</strong> — cliente de e-mail minimalista pensado para ser simples, rápido, bonito e acessível. <a href="../smails/pt.html">Conhecer o projeto →</a></li>
+      <li><strong>Ayla</strong> — assistente inteligente voltada à automação, aprendizado e execução governada. <a href="../ayla/pt.html">Conhecer o projeto →</a></li>
+    </ul>
+
+    <h2>Tecnologias utilizadas</h2>
+    <p>Python, Dart, Flutter, JavaScript, HTML, CSS, Kotlin, PowerShell, Git, GitHub Actions e APIs.</p>
+
+    <footer>
+      <div class="footer-top"><span>Carlos Castilho Jr. · Charlie_030183</span><a href="https://github.com/Charlie030183">GitHub</a></div>
+      <div class="legal">Prévia temporária para validação visual.</div>
+    </footer>
+  </main>
 </body>
 </html>
