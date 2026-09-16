@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smails — Charlie_030183</title>
+  <meta name="description" content="Smails is a minimalist mobile email client for Android and iOS.">
+  <link rel="alternate" hreflang="pt-BR" href="pt.html">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <style>
+    :root { color-scheme: dark; --bg:#0d1117; --card:#161b22; --text:#e6edf3; --muted:#8b949e; --line:#30363d; --accent:#3fb950; }
+    * { box-sizing: border-box; }
+    body { margin:0; min-height:100vh; font-family:ui-sans-serif,system-ui,Segoe UI,Helvetica,Arial,sans-serif;
+      background:radial-gradient(circle at top,#1c2333 0%,var(--bg) 45%); color:var(--text);
+      display:flex; align-items:center; justify-content:center; padding:32px 16px; }
+    main { position:relative; width:min(760px,100%); background:var(--card); border:1px solid var(--line); border-radius:16px; padding:28px 32px 40px; }
+    .hero { position:relative; min-height:96px; display:flex; align-items:center; justify-content:center; margin-bottom:24px; }
+    .lockup { display:flex; align-items:center; gap:16px; width:min(420px,72%); }
+    .lockup svg.icon { width:72px; height:72px; flex-shrink:0; }
+    .lockup .titles strong { display:block; font-size:2rem; color:#f3eee6; }
+    .lockup .titles span { display:block; font-size:14px; color:#9aa4af; letter-spacing:1.4px; }
+    h2 { margin:24px 0 10px; font-size:1.1rem; }
+    p { margin:0 0 16px; color:var(--muted); line-height:1.6; font-size:1.05rem; text-align:justify; }
+    ul { margin:8px 0 16px; padding-left:20px; color:var(--text); line-height:1.7; }
+    a { color:#58a6ff; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .gh-mark { position:absolute; right:0; top:50%; transform:translateY(-50%); display:flex; flex-direction:column; align-items:center; gap:6px; padding:8px 10px; border:1px solid var(--line); border-radius:12px; background:#0d1117; text-decoration:none; color:var(--muted); }
+    .gh-mark img { width:28px; height:27px; display:block; }
+    .gh-mark span { font-size:10px; letter-spacing:.02em; white-space:nowrap; }
+    footer { margin-top:8px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+    .footer-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    .lang-switch { display:flex; width:22px; height:16px; }
+    .lang-switch img { width:22px; height:16px; border-radius:2px; }
+    .legal { margin-top:10px; font-size:11px; color:#6e7681; }
+    @media (max-width:720px) {
+      body { padding:16px 10px; } main { padding:20px 14px 28px; }
+      .hero { justify-content:space-between; gap:8px; min-height:0; }
+      .lockup { width:auto; max-width:calc(100% - 124px); flex:1; }
+      .gh-mark { position:static; transform:none; }
+    }
+  </style>
+  <link rel="stylesheet" href="../assets/project-bar.css">
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <div class="lockup">
+        <svg class="icon" viewBox="0 0 128 128" role="img" aria-label="Smails logo">
+          <defs>
+            <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#0a4a6e"/>
+              <stop offset="1" stop-color="#20c4e8"/>
+            </linearGradient>
+          </defs>
+          <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+          <g transform="translate(22,30) rotate(-18 42 34)">
+            <path d="M6 44 L78 8 L42 62 L34 40 Z" fill="#f7fbff" stroke="#d4b36a" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M34 40 L78 8 L48 48 Z" fill="#e8eef4" stroke="#d4b36a" stroke-width="1.6"/>
+            <path d="M34 40 L42 62 L48 48 Z" fill="#d5dde6"/>
+          </g>
+        </svg>
+        <div class="titles"><strong>Smails</strong><span>Minimalist mobile email</span></div>
+      </div>
+      <a class="gh-mark" href="https://github.com/Charlie030183" aria-label="Works with GitHub">
+        <img src="../assets/github-invertocat-white.svg" alt="GitHub" width="28" height="27">
+        <span>Works with GitHub</span>
+      </a>
+    </div>
+    <p>Smails is a fast, minimalist email app for Android and iOS. It keeps the essentials in reach and hides the rest behind Advanced Options.</p>
+    <p>It is inspired by clean mail apps such as Spark, with a more three-dimensional paper-plane mark, light themes, readable type, and short animations.</p>
+    <ul>
+      <li>Sign in first with Gmail; Outlook and other providers stay in Advanced Options.</li>
+      <li>No private mail server of its own — it talks to your existing accounts.</li>
+      <li>Messages arrive one by one so the inbox feels immediate.</li>
+      <li>Report spam, block a sender, and undo send for one minute.</li>
+      <li>Family sideload first; store listing only after Charlie approves.</li>
+    </ul>
+    <p>A personal project created and directed by Charlie_030183. Internal code stays private. This page shows the public idea.</p>
+    <footer>
+      <div class="footer-top">
+        <div>Contact: <a href="https://github.com/Charlie030183">github.com/Charlie030183</a></div>
+        <a class="lang-switch" href="pt.html" title="Português"><img src="../assets/flag-br.svg" alt="Português"></a>
+      </div>
+      <div class="project-bar" role="navigation" aria-label="Charlie projects">
+        <span class="label">Projects</span>
+        <nav>
+          <a href="../ayla/">Ayla</a>
+          <a href="../smails/" aria-current="page">Smails</a>
+        </nav>
+      </div>
+      <p class="legal">GitHub and the Invertocat logo are trademarks of GitHub, Inc. Smails is not a product of Google, Apple, or Readdle.</p>
+    </footer>
+  </main>
+</body>
+</html>
