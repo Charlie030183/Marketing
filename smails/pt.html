@@ -12,8 +12,9 @@
     body { margin:0; min-height:100vh; font-family:ui-sans-serif,system-ui,Segoe UI,Helvetica,Arial,sans-serif; background:radial-gradient(circle at top,#1c2333 0%,var(--bg) 45%); color:var(--text); display:flex; align-items:center; justify-content:center; padding:32px 16px; }
     main { position:relative; width:min(760px,100%); background:var(--card); border:1px solid var(--line); border-radius:16px; padding:28px 32px 40px; }
     .hero { position:relative; min-height:128px; display:flex; align-items:center; justify-content:center; margin-bottom:24px; }
-    .lockup { display:flex; align-items:center; justify-content:center; gap:20px; width:auto; margin:0 auto; }
+    .lockup { display:flex; align-items:center; justify-content:center; gap:20px; width:auto; margin:0 auto; min-width:0; }
     .lockup .icon { width:140px; height:108px; object-fit:contain; flex-shrink:0; display:block; }
+    .lockup .titles { min-width:0; }
     .lockup .titles strong { display:block; font-size:2rem; color:#f3eee6; }
     .lockup .titles span { display:block; font-size:14px; color:#9aa4af; letter-spacing:1.4px; }
     p { margin:0 0 16px; color:var(--muted); line-height:1.6; font-size:1.05rem; text-align:justify; }
@@ -31,12 +32,14 @@
     @media (max-width:720px) {
       body { padding:16px 10px; }
       main { padding:20px 14px 28px; }
-      .hero { justify-content:space-between; align-items:center; gap:8px; min-height:0; margin-bottom:18px; }
-      .lockup { width:auto; max-width:calc(100% - 124px); margin:0; flex:1 1 auto; justify-content:flex-start; gap:10px; }
-      .lockup .icon { width:72px; height:62px; }
-      .lockup .titles strong { font-size:1.55rem; line-height:1.1; }
-      .lockup .titles span { font-size:10px; letter-spacing:.8px; line-height:1.35; }
-      .gh-mark { position:static; transform:none; flex:0 0 auto; }
+      .hero { display:flex; flex-wrap:nowrap; justify-content:space-between; align-items:center; gap:6px; min-height:96px; margin-bottom:18px; }
+      .lockup { width:auto; max-width:calc(100% - 116px); margin:0; flex:1 1 auto; justify-content:flex-start; gap:7px; min-width:0; }
+      .lockup .icon { width:58px; height:52px; }
+      .lockup .titles strong { font-size:1.35rem; line-height:1.05; white-space:nowrap; }
+      .lockup .titles span { font-size:8px; letter-spacing:.45px; line-height:1.25; white-space:normal; }
+      .gh-mark { position:static; transform:none; flex:0 0 auto; width:108px; min-width:108px; padding:8px 6px; }
+      .gh-mark img { width:28px; height:27px; }
+      .gh-mark span { font-size:9px; }
     }
   </style>
   <link rel="stylesheet" href="../assets/project-bar.css">
