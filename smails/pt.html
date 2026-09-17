@@ -7,52 +7,36 @@
   <link rel="alternate" hreflang="pt-BR" href="pt.html">
   <link rel="alternate" hreflang="en" href="index.html">
   <style>
-    :root { color-scheme: dark; --bg:#0d1117; --card:#161b22; --text:#e6edf3; --muted:#8b949e; --line:#30363d; --accent:#3fb950; }
-    * { box-sizing: border-box; }
+    :root { color-scheme:dark; --bg:#0d1117; --card:#161b22; --text:#e6edf3; --muted:#8b949e; --line:#30363d; }
+    * { box-sizing:border-box; }
     body { margin:0; min-height:100vh; font-family:ui-sans-serif,system-ui,Segoe UI,Helvetica,Arial,sans-serif; background:radial-gradient(circle at top,#1c2333 0%,var(--bg) 45%); color:var(--text); display:flex; align-items:center; justify-content:center; padding:32px 16px; }
-    main { position:relative; width:min(760px,100%); background:var(--card); border:1px solid var(--line); border-radius:16px; padding:28px 32px 40px; overflow:hidden; }
+    main { position:relative; width:min(760px,100%); background:var(--card); border:1px solid var(--line); border-radius:16px; padding:28px 32px 40px; }
     .hero { position:relative; min-height:128px; display:flex; align-items:center; justify-content:center; margin-bottom:24px; }
-    .lockup { display:flex; align-items:center; justify-content:center; gap:20px; width:auto; margin:0 auto; min-width:0; }
-    .lockup .icon { width:140px; height:108px; object-fit:contain; flex-shrink:0; display:block; background:transparent; border:0; border-radius:0; box-shadow:none; }
-    .lockup .titles { min-width:0; }
-    .lockup .titles strong { display:block; font-size:2rem; color:#f3eee6; line-height:1.1; }
-    .lockup .titles span { display:block; font-size:14px; color:#9aa4af; letter-spacing:1.4px; line-height:1.45; }
+    .lockup { display:flex; align-items:center; justify-content:center; gap:20px; width:auto; margin:0 auto; }
+    .lockup .icon { width:140px; height:108px; object-fit:contain; flex-shrink:0; display:block; }
+    .lockup .titles strong { display:block; font-size:2rem; color:#f3eee6; }
+    .lockup .titles span { display:block; font-size:14px; color:#9aa4af; letter-spacing:1.4px; }
     p { margin:0 0 16px; color:var(--muted); line-height:1.6; font-size:1.05rem; text-align:justify; }
     ul { margin:8px 0 16px; padding-left:20px; color:var(--text); line-height:1.7; }
     a { color:#58a6ff; text-decoration:none; }
     a:hover { text-decoration:underline; }
     .gh-mark { position:absolute; right:0; top:50%; transform:translateY(-50%); display:flex; flex-direction:column; align-items:center; gap:6px; padding:8px 10px; border:1px solid var(--line); border-radius:12px; background:#0d1117; text-decoration:none; color:var(--muted); }
     .gh-mark img { width:28px; height:27px; display:block; }
-    .gh-mark span { font-size:10px; letter-spacing:.02em; white-space:nowrap; }
+    .gh-mark span { font-size:10px; letter-spacing:.02em; white-space:nowrap; color:var(--muted); }
     footer { margin-top:8px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
     .footer-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
     .lang-switch { display:flex; width:22px; height:16px; flex-shrink:0; }
     .lang-switch img { width:22px; height:16px; border-radius:2px; }
     .legal { margin-top:10px; font-size:11px; color:#6e7681; text-align:left; }
     @media (max-width:720px) {
-      body { padding:16px 10px; align-items:flex-start; }
-      main { padding:20px 18px 28px; border-radius:14px; }
-      .hero { min-height:0; margin-bottom:22px; display:grid; grid-template-columns:minmax(0,1fr) auto; gap:14px; align-items:center; }
-      .lockup { width:100%; margin:0; justify-content:flex-start; gap:12px; min-width:0; }
-      .lockup .icon { width:88px; height:72px; }
-      .lockup .titles strong { font-size:1.75rem; white-space:nowrap; }
-      .lockup .titles span { font-size:12px; letter-spacing:1px; line-height:1.35; }
-      .gh-mark { position:static; transform:none; padding:7px 8px; min-width:92px; }
-      .gh-mark img { width:25px; height:24px; }
-      .gh-mark span { font-size:9px; }
-      p { text-align:left; font-size:1rem; line-height:1.55; }
-      ul { padding-left:22px; line-height:1.6; }
-      li { margin-bottom:7px; }
-      .footer-top { align-items:flex-end; }
-    }
-    @media (max-width:430px) {
-      main { padding-left:16px; padding-right:16px; }
-      .hero { grid-template-columns:1fr; justify-items:center; gap:12px; }
-      .lockup { justify-content:center; width:auto; }
-      .lockup .icon { width:100px; height:78px; }
-      .lockup .titles strong { font-size:1.8rem; }
-      .gh-mark { flex-direction:row; justify-content:center; width:auto; min-width:0; padding:7px 12px; gap:8px; }
-      .gh-mark span { font-size:10px; }
+      body { padding:16px 10px; }
+      main { padding:20px 14px 28px; }
+      .hero { justify-content:space-between; align-items:center; gap:8px; min-height:0; margin-bottom:18px; }
+      .lockup { width:auto; max-width:calc(100% - 124px); margin:0; flex:1 1 auto; justify-content:flex-start; gap:10px; }
+      .lockup .icon { width:72px; height:62px; }
+      .lockup .titles strong { font-size:1.55rem; line-height:1.1; }
+      .lockup .titles span { font-size:10px; letter-spacing:.8px; line-height:1.35; }
+      .gh-mark { position:static; transform:none; flex:0 0 auto; }
     }
   </style>
   <link rel="stylesheet" href="../assets/project-bar.css">
@@ -61,37 +45,17 @@
   <main>
     <div class="hero">
       <div class="lockup">
-        <img class="icon" src="../assets/smails-logo.png" alt="Smails" role="img" aria-label="Smails">
+        <img class="icon" src="../assets/smails-logo.png" alt="Smails">
         <div class="titles"><strong>Smails</strong><span>E-mail mobile minimalista</span></div>
       </div>
-      <a class="gh-mark" href="https://github.com/Charlie030183" aria-label="Funciona com GitHub">
-        <img src="../assets/github-invertocat-white.svg" alt="GitHub" width="28" height="27">
-        <span>Funciona com GitHub</span>
-      </a>
+      <a class="gh-mark" href="https://github.com/Charlie030183" aria-label="Funciona com GitHub"><img src="../assets/github-invertocat-white.svg" alt="GitHub"><span>Funciona com GitHub</span></a>
     </div>
     <p>Smails é um app de e-mail rápido e minimalista para Android e iOS. Deixa o essencial à mão e esconde o resto em Opções Avançadas.</p>
     <ul>
-      <li>Entrada primeiro com Gmail; Outlook e outros ficam em Avançadas.</li>
-      <li>Sem servidor próprio de e-mail — usa as contas que você já tem.</li>
-      <li>As mensagens chegam uma a uma, para a caixa parecer imediata.</li>
-      <li>Denunciar spam, bloquear remetente e desfazer envio por um minuto.</li>
-      <li>Primeiro na família por instalação direta; loja só depois que Charlie autorizar.</li>
+      <li>Entrada primeiro com Gmail; Outlook e outros ficam em Avançadas.</li><li>Sem servidor próprio de e-mail — usa as contas que você já tem.</li><li>As mensagens chegam uma a uma, para a caixa parecer imediata.</li><li>Denunciar spam, bloquear remetente e desfazer envio por um minuto.</li><li>Primeiro na família por instalação direta; loja só depois que Charlie autorizar.</li>
     </ul>
     <p>Projeto pessoal criado e dirigido por Charlie_030183. O código interno permanece privado. Esta página mostra só a ideia pública.</p>
-    <footer>
-      <div class="footer-top">
-        <div>Contato: <a href="https://github.com/Charlie030183">github.com/Charlie030183</a></div>
-        <a class="lang-switch" href="index.html" title="English"><img src="../assets/flag-us.svg" alt="English"></a>
-      </div>
-      <div class="project-bar" role="navigation" aria-label="Projetos">
-        <span class="label">Projetos</span>
-        <nav>
-          <a href="../ayla/">Ayla</a>
-          <a href="../smails/" aria-current="page">Smails</a>
-        </nav>
-      </div>
-      <p class="legal">GitHub e o logo Invertocat são marcas da GitHub, Inc. Smails não é produto do Google ou da Apple.</p>
-    </footer>
+    <footer><div class="footer-top"><div>Contato: <a href="https://github.com/Charlie030183">github.com/Charlie030183</a></div><a class="lang-switch" href="index.html" title="English"><img src="../assets/flag-us.svg" alt="English"></a></div><div class="project-bar" role="navigation" aria-label="Projetos"><span class="label">Projetos</span><nav><a href="../ayla/">Ayla</a><a href="../smails/" aria-current="page">Smails</a></nav></div><p class="legal">GitHub e o logo Invertocat são marcas da GitHub, Inc. Smails não é produto do Google ou da Apple.</p></footer>
   </main>
 </body>
 </html>
