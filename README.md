@@ -10,7 +10,7 @@ Artefatos estáveis aprovados continuam em [IASquad-Distribution](https://github
 
 ## Regras
 
-- Mesmo estilo da página Ayla (layout, cores, idiomas); mudar só logo e título.
+- **Padrão visual oficial:** a página atual da Ayla é a referência obrigatória para todas as páginas de projetos (layout, cores, tipografia, responsividade, cabeçalho, rodapé, seletor de idiomas, seção de tecnologias e bloco de contato com ícone LinkedIn azul/branco alinhado). Alterar apenas identidade e conteúdo específicos de cada projeto.
 - **Logos:** só públicos após aprovação Charlie.
 - **Barra de projetos no rodapé:** só inclui projetos que Charlie autorizar como “relativamente bons para publicar”.
 - IAs **não** trabalham / publicam automaticamente sem autorização.
