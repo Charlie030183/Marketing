@@ -19,14 +19,18 @@
   gap: 8px 14px;
   align-items: center;
 }
-.project-bar a {
+.project-bar a,
+.project-bar .project-ayla,
+.project-bar .project-smails,
+.project-bar .project-castaway {
+  color: #58a6ff !important;
   text-decoration: none;
 }
-.project-bar .project-ayla { color: #3fb950 !important; }
-.project-bar .project-smails { color: #58a6ff !important; }
-.project-bar .project-castaway { color: #e3b341 !important; }
-.project-bar a:hover { text-decoration: underline; }
+.project-bar a:hover {
+  text-decoration: underline;
+}
 .project-bar a[aria-current="page"] {
+  color: #3fb950 !important;
   font-weight: 600;
   pointer-events: none;
 }
