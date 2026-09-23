@@ -22,21 +22,10 @@
 .project-bar a {
   text-decoration: none;
 }
-
-/* Fixed project identity colors across every project page. */
-.project-bar a[href*="/ayla/"] {
-  color: #3fb950;
-}
-.project-bar a[href*="/smails/"] {
-  color: #58a6ff;
-}
-.project-bar a[href*="/screenantics/"] {
-  color: #e3b341;
-}
-
-.project-bar a:hover {
-  text-decoration: underline;
-}
+.project-bar .project-ayla { color: #3fb950 !important; }
+.project-bar .project-smails { color: #58a6ff !important; }
+.project-bar .project-castaway { color: #e3b341 !important; }
+.project-bar a:hover { text-decoration: underline; }
 .project-bar a[aria-current="page"] {
   font-weight: 600;
   pointer-events: none;
