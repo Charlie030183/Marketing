@@ -20,12 +20,24 @@
   align-items: center;
 }
 .project-bar a {
-  color: #58a6ff;
   text-decoration: none;
 }
-.project-bar a:hover { text-decoration: underline; }
+
+/* Fixed project identity colors across every project page. */
+.project-bar a[href*="/ayla/"] {
+  color: #3fb950;
+}
+.project-bar a[href*="/smails/"] {
+  color: #58a6ff;
+}
+.project-bar a[href*="/screenantics/"] {
+  color: #e3b341;
+}
+
+.project-bar a:hover {
+  text-decoration: underline;
+}
 .project-bar a[aria-current="page"] {
-  color: var(--accent, #3fb950);
   font-weight: 600;
   pointer-events: none;
 }
