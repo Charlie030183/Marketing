@@ -1,6 +1,6 @@
 # Marketing
 
-Hospedeiro **público** das páginas de projeto de Charlie_030183 (estilo Ayla).
+Hospedeiro **público** das páginas de projeto de Charlie030183 (estilo Ayla).
 
 ## Exceção de visibilidade (Charlie EXPRESS 2026-09-15)
 
@@ -14,7 +14,7 @@ Artefatos estáveis aprovados continuam em [IASquad-Distribution](https://github
 - **Logos:** só públicos após aprovação Charlie.
 - **Barra de projetos no rodapé:** só inclui projetos que Charlie autorizar como “relativamente bons para publicar”.
 - IAs **não** trabalham / publicam automaticamente sem autorização.
-- Sem Drive. Sem force-push. Crédito: Charlie_030183.
+- Sem Drive. Sem force-push. Crédito: [Charlie030183](https://www.linkedin.com/in/83castilhojr).
 
 ## Estrutura
 
